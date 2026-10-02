@@ -1,17 +1,29 @@
-# usb_cap
+# USB Capture Viewer
 
-A new Flutter project.
+This project is a small Android app built with Flutter for viewing live video from USB capture devices and UVC-compatible cameras. It is designed for situations where a USB camera or capture card is connected to a phone or tablet and you want a simple way to preview the stream, take photos, or record short video clips.
 
-## Getting Started
+The app focuses on a clean and lightweight experience for working with external USB video hardware. It detects connected devices, requests the needed permissions, and shows a live preview so you can quickly use the camera without extra setup.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Detects connected USB video devices
+- Requests the required Android permissions
+- Shows a live camera preview
+- Captures still images and saves them to the gallery
+- Records video clips from the connected device
+- Keeps the screen awake while viewing
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Getting started
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Make sure Flutter is installed and set up on your machine.
+2. Open the project in your editor.
+3. Run the following command in the project folder:
+
+   ```bash
+   flutter pub get
+   ```
+
+4. Connect a supported USB capture device or UVC camera to an Android device.
+5. Run the app and allow the required permissions.
+
+This project is intended mainly for Android devices that support USB host mode and have a compatible camera input.

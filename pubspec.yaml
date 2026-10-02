@@ -1,0 +1,25 @@
+name: usb_capture_viewer
+description: Minimal live viewer for USB (UVC) capture cards on Android.
+publish_to: none
+version: 1.0.1+2
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  uvccamera:
+    path: packages/uvccamera
+  permission_handler: ^11.3.1
+  saver_gallery: ^5.1.0
+  wakelock_plus: ^1.2.8
+  device_info_plus: ^13.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
